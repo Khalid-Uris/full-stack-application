@@ -1,4 +1,4 @@
-import { createBrowserRouter, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./views/Login";
 import NotFound from "./views/NotFound";
 import Signup from "./views/Signup";
@@ -8,6 +8,16 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+    // children: [
+    //   {
+    //     path: "dashboard",
+    //     element: <Dashboard />,
+    //   },
+    //   {
+    //     path: "about",
+    //     element: <About />,
+    //   },
+    // ],
   },
   {
     path: "/signup",
